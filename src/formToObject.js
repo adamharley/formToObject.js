@@ -314,7 +314,7 @@
             // and put them into an array.
             if( isCheckbox($domNode) ){
                 if( domNodeValue !== false ){
-                    if( !result[key] ){
+                    if( !Array.isArray(result[key]) ){
                         result[key] = [];
                     }
                     return result[key].push( domNodeValue );
